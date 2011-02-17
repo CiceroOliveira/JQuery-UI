@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<header>
+	<h1><%= @person.name %></h1>
+</header>
+
+<%= @person.email %>
+
+<p>
+  <strong>Info:</strong>
+  <%= @person.info %>
+</p>
+
+<section id="supporting">
+	<h2>Supportees List</h2>
+	<div id="accordion">
+		<%= render :partial => 'relationships/relationship', :collection => @person.relationships %>
+		</div>
+</section>
+
+<section id="connections-list">
+	<h2>Connections List</h2>
+		<%= render :partial => 'relationships/connection', :collection => @person.relationships %>
+</section>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

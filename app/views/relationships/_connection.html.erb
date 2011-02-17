@@ -1,0 +1,35 @@
+<div class="tabs">
+	<ul>
+		<li><%= link_to connection.client.name, "##{tab_id(1,connection)}" %></li>
+		<li><%= link_to 'Connection Info', "##{tab_id(2,connection)}" %></li>
+		<li><%= link_to connection.prospect.name, "##{tab_id(3,connection)}" %></li>
+	</ul>
+
+	<%= tag 'div', :id=>"#{tab_id(1,connection)}" %>
+	 	<ul>
+			<li>
+				<strong>Email:</strong> <%= connection.client.email %>
+			</li>
+			<li>
+				<strong>Info: </strong> <%= connection.client.info %>
+			</li>
+		</ul>
+	</div>
+
+	<%= tag 'div', :id=>"#{tab_id(2,connection)}" %>
+		<ul>
+	 		<li><%= connection.info %></li>
+		</ul>
+	</div>
+
+	<%= tag 'div', :id=>"#{tab_id(3,connection)}" %>
+		<ul>
+			<li>
+				<strong>Email:</strong> <%= connection.prospect.email %>
+			</li>
+			<li>
+				<strong>Info: </strong> <%= connection.prospect.info %>
+			</li>
+		</ul>
+	</div>	
+</div>

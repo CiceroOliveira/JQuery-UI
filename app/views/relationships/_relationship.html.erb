@@ -1,0 +1,19 @@
+		<div>
+			<h3>
+				<%= link_to relationship.prospect.name, relationship.prospect %>
+			</h3>
+
+			<div class="body">
+		  	<ul class="supportee-info">
+					<li>
+						<strong>Email:</strong> <%= relationship.prospect.email %>
+					</li>
+					<li>
+						<strong>Info: </strong> <%= relationship.prospect.info %>
+					</li>
+				</ul>
+				<ul class="relationship-info">
+		  		<li><%= relationship.info %></li>
+				</ul>
+			</div>
+		</div>

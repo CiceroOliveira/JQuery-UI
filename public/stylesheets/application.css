@@ -1,0 +1,21 @@
+section#page header {
+	border-bottom: 3px solid #000;
+	margin-bottom: 1em;
+}
+
+section#page h2 {
+	margin-top: 0.5em;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+ul.supportee-info {
+	float: left;
+	width: 33%;
+}
+
+ul.relationship-info {
+	float: left;
+}
